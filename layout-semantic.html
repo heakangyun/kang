@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS slelctors </title>
+<style>
+h1 { background-color: red; border:5px solid black; padding: 5px; width: 500px} /* select all h1 element */
+h1.class1{background-color: green;} /*slelct all element with the class name calss1 */
+h1#id1{background-color: yellow;} /* select element wuth id id1*/
+*{background-color: pink; box-sizing: border-box;} /* selects all the element - this will not override*/
+div p {color: yellow;}/* selects all p inside div*/
+h1,p {color: red;} /* selects h1 and p with, group selecrot */
+div > em {color: blue;} /* selectors all em where parent is div */
+
+
+</style>
+</head>
+<body>
+<h1 class="class1"> Heading </h1>
+<h1 id="id1"> Heading </h1>
+<p> para </p>
+<div>
+	<em> some text</em>
+	<p> <sm>para 2</sm></p>
+	<em> some more text</em>
+</div>
+
+
+
+
+
+</body>
+</html>
